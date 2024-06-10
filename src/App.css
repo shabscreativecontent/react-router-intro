@@ -1,38 +1,262 @@
-.App {
-  text-align: center;
+*{
+    /* border: 1px solid red; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    background-color: #FFF7ED;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    font-size: 70%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 25px;
+    font-size: 0.8rem;
 }
 
-.App-link {
-  color: #61dafb;
+nav a {
+    text-decoration: none;
+    color: #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home{
+    height: 400px;
+    background-image: url('./image/home-img.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.home-content{
+    padding-top: 64px;
+}
+
+.home h1, .home p {
+    color: #fff;
+    width: 90%;
+    margin: auto;
+    text-align: start;
+}
+
+.home h1 {
+    font-size: 2rem;
+    /* margin-top: 65px; */
+}
+
+.home p, .about-div-content p{
+    margin-top: 24px;
+    font-size: 0.9rem;
+}
+
+.find-button {
+    padding: 10px 0px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #FF8C38;
+}
+
+.find-button > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.about{
+    margin-right: 20px;
+}
+
+.about-container{
+    overflow: hidden;
+}
+
+.about-container > img{
+    width: 100%;
+}
+
+.about-div-content{
+    width: 90%;
+    margin: auto;
+    padding: 48px 0px;
+}
+
+.about-div-content h2{
+    font-size: 1.4rem;
+}
+
+.explore-content{
+    padding: 32px 38px;
+    margin-top: 50px;
+    background-color: #FFCC8D;
+}
+
+.explore-content h3{
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.link-button {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.vans-contents{
+    width: 90%;
+    margin: auto;
+}
+
+.vans-contents h2{
+    margin-top: 50px;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.sort-button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-button  button {
+    padding: 7px 15px;
+    border-style: none;
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.sort-button > .clear-vans {
+    background-color: #00000000;
+    text-decoration: underline;
+    justify-self: flex-end;
+}
+
+.vans-full-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.single-van {
+    width: 48%;
+    margin-bottom: 25px;
+}
+
+.single-van a{
+    text-decoration: none;
+    color: #000;
+}
+
+.single-van  img {
+    width: 100%;
+}
+
+.single-van div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.single-van h4, .single-van span{
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.single-van span > p{
+    font-size: 0.4;
+    font-weight: 400;
+}
+
+.single-van button, .van-button-simple{
+    border: none;
+    padding: 10px 25px;
+    color: #FFEAD0;
+    background-color: #FF8C38;
+    border-radius: 5px;
+}
+
+.loading {
+    text-align: center;
+    margin: 100px 0px;
+}
+
+.vanDetail{
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+
+.vanDetail a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.vanDetail-p{
+    margin-top: 50px;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.vanDetail img{
+    width: 100%;
+}
+
+.van-button-simple{
+    margin: 50px 0px 20px 0px;
+}
+
+.vanDetail h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.vanDetail span{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.vanDetail span > p {
+    margin: 0px;
+    font-size: 1rem;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.vanDetail span + p {
+    margin: 20px 0px;
+    font-size: 0.92rem;
+    line-height: 22px;
+}
+
+.rent-button{
+    width: 100%;
+    border: none;
+    padding: 15px 0px;
+    margin-bottom: 80px;
+    background-color: #FF8C38;
+    color: #fff;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #252525;
+    color: #aaaaaa;
+    padding-block: 25px;
+    margin-top: auto;
 }
